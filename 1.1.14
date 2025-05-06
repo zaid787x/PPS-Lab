@@ -1,0 +1,14 @@
+n1 = int(input("digit1 (0-9): "))
+n2 = int(input("digit2 (0-9): "))
+n3 = int(input("digit3 (0-9): "))
+
+if 0<=n1<=9 and 0<=n2<=9 and 0<=n3<=9:
+	n = [n1,n2,n3]
+	print(f"{n[0]}{n[1]}{n[2]}")
+	print(f"{n[0]}{n[2]}{n[1]}")
+	print(f"{n[1]}{n[0]}{n[2]}")
+	print(f"{n[1]}{n[2]}{n[0]}")
+	print(f"{n[2]}{n[0]}{n[1]}")
+	print(f"{n[2]}{n[1]}{n[0]}")
+else:
+	print("Invalid")
