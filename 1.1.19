@@ -1,0 +1,6 @@
+str = input()
+mod_str = ""
+for char in str:
+	if char.isalnum() or char.isspace():
+		mod_str += char
+print(mod_str)
