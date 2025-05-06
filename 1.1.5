@@ -1,0 +1,17 @@
+# write your code here..
+import math
+a=float(input("a: "))
+b=float(input("b: "))
+c=float(input("c: "))
+dis = b**2 - 4*a*c
+if dis > 0:
+	r1 = (-b + math.sqrt(dis)) / (2*a)
+	r2 = (-b - math.sqrt(dis)) / (2*a)
+	print(f"The roots are: {r1:.2f} and {r2:.2f}")
+elif dis == 0:
+	r = -b / (2 * a)
+	print(f"The root is: {r:.2f}")
+else:
+	real = -b / (2 * a)
+	imaginary = math.sqrt(abs(dis)) / (2 * a)
+	print(f"The roots are: {real:.2f}+{imaginary:.2f}j and {real:.2f}-{imaginary:.2f}j")
